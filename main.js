@@ -3,4 +3,4 @@ setTimeout(() => {
     let body = document.querySelector('.body')
     section.style.display = 'none';
     body.style.display = 'block';
-  }, 6000)
+  }, 7000)
