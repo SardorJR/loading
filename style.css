@@ -117,9 +117,7 @@ body {
         border-radius: 24px;
         border: 0;
         color: white;
-        background: linear-gradient(limegreen, transparent),
-            linear-gradient(90deg, skyblue, transparent),
-            linear-gradient(-90deg, coral, transparent);
+        background: orange;
 
     }
 }
@@ -413,9 +411,7 @@ body {
         border-radius: 24px;
         border: 0;
         color: white;
-        background: linear-gradient(limegreen, transparent),
-            linear-gradient(90deg, skyblue, transparent),
-            linear-gradient(-90deg, coral, transparent);
+        background: orange;
     }
 
     .btt {
@@ -678,19 +674,19 @@ section {
 
 .loading-container {
     text-align: center;
-    
+
 }
 
 .loading-container {
     text-align: center;
-padding-block: 40px 0;
+    padding-block: 40px 0;
 }
 
 .loading-text {
     font-size: 40px;
     font-weight: bold;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: "Fredericka the Great", serif;
 }
 
 
@@ -727,27 +723,54 @@ padding-block: 40px 0;
 
 
 
-.letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .letter7 {
+.letter1,
+.letter2,
+.letter3,
+.letter4,
+.letter5,
+.letter6,
+.letter7 {
     opacity: 0;
     animation: letterFall 1s infinite;
+    font-family: "Fredericka the Great", serif;
 }
+
 @keyframes letterFall {
     0% {
         transform: translateY(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-.letter1 { animation-delay: 0.1s; }
-.letter2 { animation-delay: 0.2s; }
-.letter3 { animation-delay: 0.3s; }
-.letter4 { animation-delay: 0.4s; }
-.letter5 { animation-delay: 0.5s; }
-.letter6 { animation-delay: 0.6s; }
-.letter7 { animation-delay: 0.7s; }
+.letter1 {
+    animation-delay: 0.1s;
+}
 
+.letter2 {
+    animation-delay: 0.2s;
+}
 
+.letter3 {
+    animation-delay: 0.3s;
+}
+
+.letter4 {
+    animation-delay: 0.4s;
+}
+
+.letter5 {
+    animation-delay: 0.5s;
+}
+
+.letter6 {
+    animation-delay: 0.6s;
+}
+
+.letter7 {
+    animation-delay: 0.7s;
+}
