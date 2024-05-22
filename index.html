@@ -128,13 +128,16 @@
           <div class="elem13">
             <div class="elem2">
               <div class="elem">
-                <p>go home</p>
+                <p>Todo</p>
                 <img src="./imgs/pseudo.png" alt="">
               </div>
-              <input type="text" placeholder="Вступительное собрание">
+              <div class="list">
+
+              </div>
               <div class="boxc">
                 <div class="boc">
-                  <img src="./imgs/4115237_add_plus_icon.png" alt="">
+                  <img class="icon_plus" src="./imgs/4115237_add_plus_icon.png" alt="">
+                 
                   <p>Добавить карточку</p>
                 </div>
                 <img src="./imgs/kart.png" alt="">
@@ -144,26 +147,34 @@
           <div class="elem13">
             <div class="elem2">
               <div class="elem">
-                <p>В процессе</p>
+                <p>In progress</p>
                 <img src="./imgs/pseudo.png" alt="">
               </div>
-              <input type="text" placeholder="go home">
+              <!-- <input type="text" placeholder="go home"> -->
+              <div class="list">
+
+              </div>
               <div class="boxc">
                 <div class="boc">
-                  <img src="./imgs/4115237_add_plus_icon.png" alt="">
+                  <img class="icon_plus" src="./imgs/4115237_add_plus_icon.png" alt="">
                   <p>Добавить карточку</p>
                 </div>
                 <img src="./imgs/kart.png" alt="">
               </div>
             </div>
           </div>
-          <div class="elem33">
+          <div class="elem13">
             <div class="elem2">
               <div class="elem">
-                <p>В процессе</p>
+                <p>Data</p>
                 <img src="./imgs/pseudo.png" alt="">
               </div>
+              <!-- <input draggable="true" type="text" placeholder="go home">
+              <input type="text" placeholder="go home">
+              <input type="text" placeholder="go home"> -->
+              <div class="list">
 
+              </div>
               <div class="boxc">
                 <div class="boc">
                   <img src="./imgs/4115237_add_plus_icon.png" alt="">
@@ -175,7 +186,7 @@
           </div>
           <div class="last">
             <button>
-              <img src="./imgs/plas2.png" alt="">
+              <img class="icon_plus" src="./imgs/plas2.png" alt="">
               <p>Добавьте еще одну колонку</p>
             </button>
           </div>
@@ -224,7 +235,27 @@
     </div>
   </section>
 
-  <script src="./main.js"></script>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="myForm" name="users">
+        <input type="text" name="title" placeholder="Title">
+        <textarea name="description" placeholder="Description"></textarea>
+        <select name="assignedTo">
+          <option value="Alex Adams">Alex Adams</option>
+          <option value="Barbara John">Barbara John</option>
+          <option value="James Bond">James Bond</option>
+        </select>
+        <select name="status">
+          <option value="In progress">In progress</option>
+          <option value="Date">Date</option>
+          <option value="Completed">Completed</option>
+        </select>
+        <button type="submit" id="submitFormBtn">Submit</button>
+      </form>
+    </div>
+  </div> 
+  <script type="module" src="./main.js"></script>
 </body>
 
 </html>
